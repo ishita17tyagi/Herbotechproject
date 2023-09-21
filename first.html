@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbotech</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(https://i.pinimg.com/originals/d6/b9/a9/d6b9a908eee30d14ef86ae6a9c196291.gif);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
+
+
+        }
+
+        /* Style the header */
+        header {
+            background-color: #333;
+            color: rgb(2, 27, 2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: solid 1px white;
+            opacity: 0.7;
+        }
+
+        /* Style the logo */
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        /* Style the navigation menu for larger screens */
+        nav {
+            display: flex;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Media query for responsive design */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background-color: #333;
+                width: 100%;
+                top: 50px;
+                left: 0;
+                text-align: center;
+                z-index: 1;
+            
+        
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            header {
+                justify-content: space-between;
+            }
+
+            .menu-toggle {
+                cursor: pointer;
+                display: block;
+                padding: 5px 10px;
+                background-color: #333;
+                border: none;
+                color: white;
+                font-size: 24px;
+                margin-right: 20px;
+            }
+
+        }
+
+
+
+        li:hover a {
+            color: rgb(4, 1, 1);
+            background-color: white;
+
+
+        }
+
+        .head {
+            color: rgb(4, 56, 4);
+            font-size: 70px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            margin-top: 220px;
+            margin-bottom: 0%;
+            text-shadow: 1px 1px 2px rgba(229, 235, 230, 0.5);
+            font-weight: bold;
+
+        }
+
+        .idea {
+            color: white;
+            font-size: larger;
+            font-weight: lighter;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            text-align: center;
+            display: block;
+            margin: 2px 0px 0px 0px;
+
+
+        }
+
+
+
+        .go-ahead-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            margin-left: 46%;
+            margin-top: 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .go-ahead-button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .go-ahead-button:hover {
+            background-color: rgb(9, 44, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="herbotech.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="active"><a href="first.html">Home</a></li>
+                <li class="active"><a href="about.html">About Us</a></li>
+                <li class="active"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="head">Herbotech</h1>
+        <p class="idea">Unlock the Secrets of the Natural World with Our Plant Recognition Tool</p>
+        <div class="button">
+            <button class="go-ahead-button"><a href="second2.html">Go Ahead</a></button>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>

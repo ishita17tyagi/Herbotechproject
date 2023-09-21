@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Herbotech</title>
+    <style>
+        /* Reset default margin and padding for all elements */
+        body {
+            background-image: url("https://img.freepik.com/free-vector/gradient-monochromatic-abstract-background_52683-74300.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        /* Style the header and navbar */
+    
+        header {
+            background-color: #333;
+            color: rgb(2, 27, 2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: solid 1px white;
+            opacity: 0.7;
+        }
+
+        /* Style the logo */
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        /* Style the navigation menu for larger screens */
+        nav {
+            display: flex;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Media query for responsive design */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                background-color: #333;
+                width: 100%;
+                top: 50px;
+                left: 0;
+                text-align: center;
+                z-index: 1;
+            
+        
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            header {
+                justify-content: space-between;
+            }
+
+            .menu-toggle {
+                cursor: pointer;
+                display: block;
+                padding: 5px 10px;
+                background-color: #333;
+                border: none;
+                color: white;
+                font-size: 24px;
+                margin-right: 20px;
+            }
+
+        }
+
+
+
+        li:hover a {
+            color: rgb(4, 1, 1);
+            background-color: white;
+
+
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            padding-top: 10px;
+            color: rgb(9, 87, 9);
+        }
+
+        /* Style the main content area */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* Style the card container */
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        /* Style the card image */
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Style card title and description */
+        .card h2 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .card p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1rem;
+            color: rgb(80, 76, 76);
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+
+            color: rgb(9, 87, 9);
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="herbotech.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li class="active"><a href="first.html">Home</a></li>
+                <li class="active"><a href="about.html">About Us</a></li>
+                <li class="active"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    
+    </header>
+    <div class="heading">
+        <h1>About Us</h1>
+    </div>
+
+    <main>
+        <div class="card">
+            <img src="https://media.tenor.com/1bpeGiE4BiQAAAAC/trees-plants.gif" alt="Image 1">
+            <h2>Our Story</h2>
+            <p>Our story is one of passion for nature and a deep-rooted commitment to environmental conservation. It all
+                began with a simple idea: to create a user-friendly website that would empower people around the world
+                to connect with the natural world by identifying and learning about plants. As a team, we embarked on
+                this exciting journey to develop a plant identification website that would make the wonders of the plant
+                kingdom accessible to everyone.
+
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://d3kjluh73b9h9o.cloudfront.net/original/4X/c/b/0/cb06810d25da9a16e7fadb563e427d6fbb36728f.gif"
+                alt="Image 2">
+            <h2>Objective</h2>
+            <p>The primary goal is to offer a reliable tool that enables users to identify plants accurately. This can
+                be accomplished through image recognition technology, user-contributed photos, or expert
+                verification.Build and maintain an extensive database of plant species, including scientific names,
+                common names, descriptions, images, habitat information, and other relevant details.
+
+
+
+            </p>
+        </div>
+
+        <div class="card">
+            <img src="https://media.tenor.com/IwZ3jG7bLV8AAAAM/megoszthat%C3%B3-trees.gif" alt="Image 2">
+            <h2>Approach</h2>
+            <p>Implement machine learning algorithms to improve the accuracy of plant identification.
+                Trained the system with a diverse dataset of plant images for better results.
+                Include features for user-generated content, such as plant photo sharing or plant scaning using mobile
+                camera.
+            </p>
+        </div>
+
+
+        <!-- Add more cards and images as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Herbotech</p>
+        
+        
+    </footer>
+</body>
+
+</html>
